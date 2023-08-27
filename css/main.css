@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+@font-face {
+    font-family: NothingYouCouldDoBold;
+    src: url(../font/FontsFree-Net-NothingYouCouldDoBold.ttf);
+};
+
+/*navbar*/
+.nav-list{
+    color: black;
+    font-size: 20px;
+    font-weight: 350;
+    transition:color .5s ;
+}
+.nav-list:hover{
+color: #FF4A52;
+}
+
+/*Banner*/
+.banner{
+    height: 100vh;
+    background-image: url(../images/banner2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-content{
+    color: white;
+    height: 100vh;
+    text-align: center;
+}
+.banner-title h1{
+    font-family: NothingYouCouldDoBold;
+    font-size: 3rem;
+}
+.banner-title h3{
+  font-size: .8rem;
+}
+
+.banner-btn{
+    background-color: #1EC6B6;
+    padding: 15px 30px;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    outline-color: none;
+    border: none;
+    transition: all .3s;
+}
+.banner-btn:hover{
+background-color: #FF4A52;
+}
+.search-section{
+    background-color: #040E27;
+}
+.search-input{
+    background-color: transparent;
+   padding: 15px 10px;
+   border: 1px solid #363E52;
+   outline: none;
+   border-radius: 8px;
+   color: white;
+}
+.search-btn{
+    background-color: #FF4A52;
+    padding: 15px 10px;
+    font-size: 17px;
+    color: white;
+    border-radius: 10px;
+    outline-color: none;
+    border: none;
+    transition: all .3s;
+}
+.search-btn:hover{
+    background-color: #1EC6B6;
+    }
+
+    /*main*/
+    /*description*/
+.description-main h1{
+    color: #040E27;
+    font-size:1.8rem;
+}
+.description-main p{
+    color: #7A838B;
+}
+/*item*/
+.item-img{
+    position: relative;
+    width: auto;
+    border: none;
+    transition: all .5s;
+    
+}
+
+.item-img img{
+    border-radius: 8px;
+    
+}
+.item-img::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color: #363E52;
+    opacity: .5;
+    border-radius: 8px;
+    z-index: 1;
+}
+.img-info{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    z-index: 1
+}
+.img-info p{
+    color: white;
+    padding:0 15px;
+    font-size: 20px;
+    transition: all .5s;
+
+}
+.img-info a{
+    background-color: #1EC6B6;
+    padding:5px 12px;
+    border-radius:15px ;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight:500;
+    margin-bottom: 10px;
+    transition: all .5s;
+
+}
+.item-img:hover{
+    transform: translateY(-10px);
+}
+.item-img:hover .img-info p{
+    color: #FF4A52;
+}
+.item-img:hover .img-info a{
+    background-color: #FF4A52;
+}
+
+/*Newsletter*/
+.Newsletter-section{
+    position: relative;
+    background: url(../images/newsletter.png) ;
+    background-position: 65% 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+}
+.Newsletter-section::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #363E52;
+    opacity: .7;
+}
+.Newsletter-container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.Newsletter-title h3{
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+}
+.Newsletter-title p{
+    color: #AAB1B7;
+    font-size: 12px;
+    font-weight: 400;
+}
+.Newsletter-input{
+    background-color: white;
+   height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.Newsletter-btn{
+   height: 50px;
+    background-color: #FF4A52;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+/*video-item*/
+.video-content{
+    position: relative;
+    background: url(../images/video.png);
+    height: 650px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.video-content::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color: #363E52;
+    opacity: .3;
+}
+.video-item{
+    position: relative;
+    z-index: 1000;
+}
+.video-title h1{
+    font-family: NothingYouCouldDoBold;
+    color: white;
+    font-size: 5rem;
+}
+.video-icon{
+    width: 85px;
+    height: 85px;
+    background-color: #1EC6B6;
+    cursor: pointer;
+    transition: all .3s;
+}
+.video-icon:hover {
+    background-color: #FF4A52;
+}
+.video-icon a{
+font-size: 20px;
+color: white;
+transition: all .3s;
+}
+
+/*footer*/
+.footer-container{
+    background-color: #040E27;
+}
+.country-item a{
+    text-decoration: none;
+color: white;
+}
+.footer-right a , .footer-left li{
+    color: #AAB1B7;
+}
+.country-item{
+    width: 50%;
+}
